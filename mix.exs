@@ -42,6 +42,9 @@ defmodule HttpBuilder.Mixfile do
 
   defp deps do
     [
+      {:machine_gun, "~> 0.1.1-pre.1", optional: true},
+      {:cowlib, "~> 2.1" , override: true},
+      {:ranch, "~> 1.4", override: true},
       {:hackney, "~> 1.10", optional: true},
       {:httpoison, "~> 0.13.0", optional: true},
       {:poison, "~> 3.0", optional: true},
