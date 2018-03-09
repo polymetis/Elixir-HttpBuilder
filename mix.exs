@@ -42,9 +42,6 @@ defmodule HttpBuilder.Mixfile do
 
   defp deps do
     [
-      {:machine_gun, "~> 0.1.1-pre.1", optional: true},
-      {:cowlib, "~> 2.1" , override: true},
-      {:ranch, "~> 1.4", override: true},
       {:hackney, "~> 1.10", optional: true},
       {:httpoison, "~> 0.13.0", optional: true},
       {:poison, "~> 3.0", optional: true},
@@ -52,6 +49,9 @@ defmodule HttpBuilder.Mixfile do
       {:ibrowse, "~> 4.4.0", optional: true},
       {:ex_doc, "~> 0.16", only: :dev, runtime: false},
       {:httparrot, "~> 1.0", only: :test},
+      {:ranch, "~> 1.4.0", override: true},
+      {:cowlib, "~> 2.1" , override: true},
+      {:machine_gun, "~> 0.1.1-pre.1", optional: true},
       {:proxy, only: :test, github: "matthewoden/proxy"}
     ]
   end
