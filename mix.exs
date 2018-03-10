@@ -45,6 +45,7 @@ defmodule HttpBuilder.Mixfile do
       {:hackney, "~> 1.10", optional: true},
       {:httpoison, "~> 0.13.0", optional: true},
       {:poison, "~> 3.0", optional: true},
+      {:jason, "~> 1.0", optional: true},
       {:httpotion, "~> 3.0", optional: true},
       {:ibrowse, "~> 4.4.0", optional: true},
       {:ex_doc, "~> 0.16", only: :dev, runtime: false},
